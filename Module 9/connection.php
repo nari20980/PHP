@@ -1,17 +1,22 @@
 <?php
 
+
+
 $host="localhost";
+$dbname="nar";
 $user="root";
 $pass="";
-$DBname="IdkIdk";
-
 
 
 try{
-$conn=new PDO("mysql:host=$host;DBname=$DBname",$pass,$user);
-echo "Connected";
-}catch(Exception $e){
-    echo "Not connected";
+
+    $conn= new PDO("mysql:host=$host;dbname=$dbname",$user,$pass);
+    echo "connected";
+}catch(exception $e){
+    echo "not connected";
+
+
 }
+
 
 ?>
